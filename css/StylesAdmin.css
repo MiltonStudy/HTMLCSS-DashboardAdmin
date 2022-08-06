@@ -1,0 +1,124 @@
+/*clases principales*/
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.borde{
+	border: 1px solid black;
+}
+
+body{
+	background: #efefef;
+}
+
+/*header*/
+header{
+	background: #35383d;
+	font-family: PT Sans;
+	color: #ffffff;
+	height: 10vh;
+}
+
+/*header profile*/
+header .profile{
+	margin: -8px -5px 0px -10px;
+	float: right;
+}
+
+header .profile h2{
+	font-size: 35px;
+}
+
+/*header logo*/
+header .logo{
+	margin: 0px -10px 0px -10px;
+	width: 5%;
+}
+
+header .logo a{
+	text-decoration: none;
+}
+
+header .logo h2{
+	color: white;
+	opacity: .6;
+	margin: 10px 0px;
+}
+
+header .linevertical{
+	position: absolute;
+	background: #35383d;
+	margin-left: -10px;
+	width: 16.4%;
+	height: 100%;
+	border-right: 1px solid #fff;
+}
+/*aside*/
+aside{
+	float: left;
+	height: 90vh;
+	background: #35383d;
+}
+
+aside ul{
+	margin: 0px -10px 0px -10px;
+	list-style: none;
+	display: block;
+}
+
+aside ul li{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #fff;
+}
+
+aside ul li a{
+	text-decoration: none;
+}
+
+aside .menu{
+	position: relative;
+	padding: 16px;
+	padding-left: 5px;
+	color: white;
+	opacity: .6;
+	font-size: 1.2em;
+}
+
+aside .barra{
+	position: absolute;
+	height: 50px;
+	width: 0px;
+	background-color: #aaa;
+	opacity: .1;
+}
+
+/*hover*/
+aside li:hover .barra{
+	width: 95%;
+}
+
+.logo:hover h2{
+	opacity: .9;
+}
+
+/*media queries*/
+@media screen and (max-width: 991px){
+	header{
+		width: auto;
+	}
+	header .linevertical{
+		display: none;
+	}
+	aside{
+		height: auto; 
+	}
+	aside li:hover .barra{
+		width: 98%;
+	}
+}
+
+
+
